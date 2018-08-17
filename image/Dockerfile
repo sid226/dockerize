@@ -1,8 +1,8 @@
 FROM node:boron
-RUN mkdir -p /app
-WORKDIR /app
+RUN mkdir -p /workspace
+WORKDIR /workspace
 COPY . .
 ADD VERSION .
 
 EXPOSE 8545
-CMD node index.js
+CMD node app/index.js
