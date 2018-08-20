@@ -20,10 +20,13 @@ def get_hit_count():
             time.sleep(0.5)
 
 
+
 @app.route('/')
 def hello():
+    with open('/tmp/files/file.text') as f:
+        content = f.read().splitlines()
     count = get_hit_count()
-    return 'Hello World! I have been seen {} times.\n'.format(count)
+    return 'Hello World! I have been seen {} times. File content:{}\n'.format(count,content)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
