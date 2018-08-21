@@ -1,13 +1,11 @@
 ## Exercises
 
-
-
 - Fork https://github.com/sid226/dockerize
-- Create a sample application in own language (java,node,python)
-must have:
-	- Exposes REST endpoints POST/GET
-	- Separate MYSQL/Mongo DB container 
-    - Mount volume from host machine
-	- Expose APIs over a port
-    
-- Generate a pull request
+
+- Create a sample REST application in own language (java,node,python)
+	1. Copy application code into a docker image
+	2. Build docker image using Ubuntu 16.04 as the base image 
+- Write a docker compose file, that:
+	1. For your image, Exposes REST endpoints POST/GET from container to host
+	2. Add a MySQL/Mongo DB/LevelDB container (Dont use Redis! You can refer to the sample created using Redis)
+	3. Mount database volume from host machine to local to persistent DB data across container deletes/restarts (the container mount location will vary depending on the database, refer to you specific DockerHub image documentation to find this out)
