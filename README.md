@@ -40,6 +40,11 @@ docker ps -a
 
 ##  Build and push docker image to dockerhub
 
+* Docker Login
+```
+docker login
+```
+
 * Navigate to image directory
 ```
 cd image
