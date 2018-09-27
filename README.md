@@ -2,7 +2,7 @@
 Sample codes to understand how to containerize applications and use docker and docker compose.
 
 * [more info](https://docs.docker.com/get-started/#images-and-containers)
-Testing
+
 
 # Requirements
 * Docker
