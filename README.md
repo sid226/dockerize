@@ -9,7 +9,6 @@ Sample codes to understand how to containerize applications and use docker and d
 * Docker-Compose
 
 
-# Try out 
 
 ## Build and run docker image locally
 
